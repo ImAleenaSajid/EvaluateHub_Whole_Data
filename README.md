@@ -6,7 +6,7 @@ It has two parts:
 
 ### Workflow
 **Run llama2, nodejs server and django server --> Open web app at `http://127.0.0.1:3000` --> Select test type --> A prompt will be generated through backend (django)
---> write essay --> Press "Submit" button --> both essay and prompt will be sent to the backend --> backend will send eval;uation result to frontend and it will be displayed on the page.**
+--> write essay --> Press "Submit" button --> both essay and prompt will be sent to the backend --> backend will send evaluation result to frontend and it will be displayed on the page.**
 
 ### Note --> Local Setup takes about 30-40 secs for prompt generation and 7-8 minutes for essay evaluation. While the API setup takes 1-3 secs for both.
 
@@ -110,7 +110,7 @@ Node/
    `http://127.0.0.1:8000`
 
 ---
-### IF API SETUP
+### (IF API SETUP) -->
 **🔑 Getting Groq API Key for LLaMA 3.3 70B**
 
 Follow these steps to obtain and use your Groq API key for accessing the **LLaMA 3.3 70B** model:
