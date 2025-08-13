@@ -11,8 +11,9 @@ It has two parts:
 ### Note --> Local Setup takes about 30-40 secs for prompt generation and 7-8 minutes for essay evaluation. While the API setup takes 1-3 secs for both.
 
 ### Link for API Setup
-https://github.com/ImAleenaSajid/fyp-frontend  (Frontend)
-https://github.com/ImAleenaSajid/fyp-backend   (Backend)
+**https://github.com/ImAleenaSajid/fyp-frontend  (Frontend)**
+
+**https://github.com/ImAleenaSajid/fyp-backend   (Backend)**
 
 ### Running Application --> https://evaluatehubfrontend.vercel.app
 ---
