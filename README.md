@@ -4,18 +4,18 @@ It has two parts:
 - **Backend** (Django) – Handles AI evaluation using LLaMA2 via Ollama.
 - **Frontend** (Node.js + Express) – Serves HTML pages and interacts with the backend.
 
-# Workflow
+### Workflow
 Run llama2, nodejs server and django server. Open web app at `http://127.0.0.1:3000` --> Select test type --> A prompt will be generated through backend (django)
 --> write essay --> Press "Submit" button --> both essay and prompt will be sent to the backend --> backend will send eval;uation result to frontend and it will be displayed on the page.
-# Note --> Local Setup takes about 30-40 secs for prompt generation and 7-8 minutes for essay evaluation. While the API setup takes 1-3 secs for both.
+### Note --> Local Setup takes about 30-40 secs for prompt generation and 7-8 minutes for essay evaluation. While the API setup takes 1-3 secs for both.
 
-# Link for API Setup
+### Link for API Setup
 https://github.com/ImAleenaSajid/fyp-frontend  (Frontend)
 https://github.com/ImAleenaSajid/fyp-backend   (Backend)
 
-# Running Application --> https://evaluatehubfrontend.vercel.app
+### Running Application --> https://evaluatehubfrontend.vercel.app
 
-# Deepseek vs Llama --> https://docs.google.com/spreadsheets/d/1mwDjxOqOM1vz-DtRJsvxRUEMoJk5m_2Afh6CNrEOcyU/edit?usp=sharing
+### Deepseek vs Llama --> https://docs.google.com/spreadsheets/d/1mwDjxOqOM1vz-DtRJsvxRUEMoJk5m_2Afh6CNrEOcyU/edit?usp=sharing
 ---
 
 ## 📂 Project Structure
@@ -60,7 +60,7 @@ Node/
 1. **Navigate to the Django project:**
    ```bash
    cd DJANGO_PROJECT_FOLDER
-````
+``
 
 2. **Create and activate a virtual environment:**
 
