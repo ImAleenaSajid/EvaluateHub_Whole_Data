@@ -5,8 +5,9 @@ It has two parts:
 - **Frontend** (Node.js + Express) – Serves HTML pages and interacts with the backend.
 
 ### Workflow
-Run llama2, nodejs server and django server. Open web app at `http://127.0.0.1:3000` --> Select test type --> A prompt will be generated through backend (django)
---> write essay --> Press "Submit" button --> both essay and prompt will be sent to the backend --> backend will send eval;uation result to frontend and it will be displayed on the page.
+**Run llama2, nodejs server and django server --> Open web app at `http://127.0.0.1:3000` --> Select test type --> A prompt will be generated through backend (django)
+--> write essay --> Press "Submit" button --> both essay and prompt will be sent to the backend --> backend will send eval;uation result to frontend and it will be displayed on the page.**
+
 ### Note --> Local Setup takes about 30-40 secs for prompt generation and 7-8 minutes for essay evaluation. While the API setup takes 1-3 secs for both.
 
 ### Link for API Setup
@@ -14,8 +15,6 @@ https://github.com/ImAleenaSajid/fyp-frontend  (Frontend)
 https://github.com/ImAleenaSajid/fyp-backend   (Backend)
 
 ### Running Application --> https://evaluatehubfrontend.vercel.app
-
-### Deepseek vs Llama --> https://docs.google.com/spreadsheets/d/1mwDjxOqOM1vz-DtRJsvxRUEMoJk5m_2Afh6CNrEOcyU/edit?usp=sharing
 ---
 
 ## 📂 Project Structure
@@ -77,7 +76,8 @@ Node/
    ```bash
    pip install -r requirements.txt
    ```
-**IF LOCAL SETUP**
+### (IF LOCAL SETUP) -->
+
 4. **Install Ollama:**
 
    * Download and install from: [https://ollama.ai/download](https://ollama.ai/download)
@@ -93,29 +93,6 @@ Node/
    ollama pull llama2
    ollama run llama2
    ```
-**IF API SETUP**
-## 🔑 Getting Groq API Key for LLaMA 3.3 70B
-
-Follow these steps to obtain and use your Groq API key for accessing the **LLaMA 3.3 70B** model:
-
-### 1. Sign Up / Log In
-- Visit [https://console.groq.com](https://console.groq.com)  
-- Create an account or log in with your existing credentials.
-
-### 2. Go to API Keys Section
-- In the dashboard, find the **API Keys** section.
-- This is usually located under your account/profile settings.
-
-### 3. Create a New API Key
-- Click **"Create API Key"**.
-- Give it a descriptive name (e.g., `llama3-70b-access`).
-- Ensure it has access to **`llama-3.3-70b-versatile`**.
-
-### 4. Copy and Store Securely
-- Once created, copy the key immediately (it will be shown only once).
-- Store it securely (.env file in (Djnago Project).
-
-
 
 6. **Apply Django migrations:**
 
@@ -124,6 +101,44 @@ Follow these steps to obtain and use your Groq API key for accessing the **LLaMA
    ```
 
 7. **Run Django backend:**
+
+   ```bash
+   python manage.py runserver
+   ```
+
+   Backend runs at:
+   `http://127.0.0.1:8000`
+
+---
+### IF API SETUP
+**🔑 Getting Groq API Key for LLaMA 3.3 70B**
+
+Follow these steps to obtain and use your Groq API key for accessing the **LLaMA 3.3 70B** model:
+
+4. **Sign Up / Log In**
+- Visit [https://console.groq.com](https://console.groq.com)  
+- Create an account or log in with your existing credentials.
+
+6. **Go to API Keys Section**
+- In the dashboard, find the **API Keys** section.
+- This is usually located under your account/profile settings.
+
+7. **Create a New API Key**
+- Click **"Create API Key"**.
+- Give it a descriptive name (e.g., `llama3-70b-access`).
+- Ensure it has access to **`llama-3.3-70b-versatile`**.
+
+8. **Copy and Store Securely**
+- Once created, copy the key immediately (it will be shown only once).
+- Store it securely (.env file in (Djnago Project).
+
+9. **Apply Django migrations:**
+
+   ```bash
+   python manage.py migrate
+   ```
+
+10. **Run Django backend:**
 
    ```bash
    python manage.py runserver
@@ -204,3 +219,4 @@ Follow these steps to obtain and use your Groq API key for accessing the **LLaMA
 * **You only need to open the Node.js link in your browser** (`http://127.0.0.1:3000`).
 * Ollama must be installed, and the `llama2` model must be pulled before running.
 * The backend **must** be running for evaluations to work.
+
