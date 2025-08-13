@@ -130,7 +130,7 @@ Follow these steps to obtain and use your Groq API key for accessing the **LLaMA
 
 8. **Copy and Store Securely**
 - Once created, copy the key immediately (it will be shown only once).
-- Store it securely (.env file in (Djnago Project).
+- Store it in **.env** file in django Project.
 
 9. **Apply Django migrations:**
 
